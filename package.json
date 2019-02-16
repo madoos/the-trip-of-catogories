@@ -1,0 +1,23 @@
+{
+  "name": "the-trip-of-catogories",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/madoos/the-trip-of-catogories.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/madoos/the-trip-of-catogories/issues"
+  },
+  "homepage": "https://github.com/madoos/the-trip-of-catogories#readme",
+  "dependencies": {
+    "ramda": "^0.26.1"
+  }
+}
