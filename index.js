@@ -1,11 +1,17 @@
-const { pipe, prop, toLower, concat, __, assoc } = require("ramda")
+const { pipe, prop, toLower, concat, __, assoc, map } = require("ramda")
+const Maybe = require("./src/maybe")
 
-// createEmail :: Object -> Object
+// createEmail :: Object -> Maybe Object
 const createEmail = pipe(
-  prop("name"),
-  toLower,
-  concat(__, "@email.com"),
-  assoc("email", __, {})
+  Maybe.of,
+  map(prop("name")),
+  map(
+    pipe(
+      toLower,
+      concat(__, "@email.com"),
+      assoc("email", __, {})
+    )
+  )
 )
 
 module.exports = createEmail

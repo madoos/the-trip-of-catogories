@@ -1,4 +1,10 @@
 const Identity = value => {
-  map: f => Identity(f(value))
+  return {
+    map: f => Identity(f(value)),
+    inspect: () => `Identity(${value})`
+  }
 }
+
+Identity.of = value => Identity(value)
+
 module.exports = Identity
