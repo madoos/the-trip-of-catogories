@@ -16,4 +16,9 @@ Ramda:
 
 `Nuestra primera parada será el mundo de los functores.`
 
-P nunca había escuchado hablar de [teoría de categorías](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) pero sus anelos lo llevavan a enfrentar nuevos caminos.
+P nunca había escuchado hablar de la [teoría de categorías](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) pero sus anhelos lo llevaban a enfrentar nuevos caminos.
+
+## El viaje
+
+- [En el mundo de los functores](ch01.md)
+- [En la tierra del quizá](ch02.md)
