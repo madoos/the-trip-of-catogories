@@ -14,6 +14,6 @@ P:
 Ramda:
 `Para lograr tu objetivo solo hay un camino, tendremos que viajar por el universo de las categorías y encontrar las respuestas.`
 
-`Nuestra primera parada será la tierra de los functores.`
+`Nuestra primera parada será el mundo de los functores.`
 
 P nunca había escuchado hablar de [teoría de categorías](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/) pero sus anelos lo llevavan a enfrentar nuevos caminos.
