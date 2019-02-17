@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/madoos/the-trip-of-catogories#readme",
   "dependencies": {
-    "ramda": "^0.26.1"
+    "ramda": "^0.26.1",
+    "readline-sync": "^1.4.9"
   }
 }

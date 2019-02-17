@@ -4,7 +4,7 @@ const Nothing = () => {
       return this
     },
     inspect() {
-      return `Nothing`
+      return `Nothing()`
     }
   }
 }
@@ -15,7 +15,9 @@ const Just = val => {
       return Just(f(val))
     },
     inspect() {
-      return `Just(${val})`
+      return typeof val === "object"
+        ? `Just(${JSON.stringify(val, null, 1)})`
+        : `Just(${val})`
     }
   }
 }
