@@ -8,9 +8,17 @@ const IO = impureAction => ({
         f
       )
     ),
-  run: impureAction
+  run: impureAction,
+  inspect: () => "IO(?)",
+  join: () => IO(() => impureAction().run()),
+  chain(f) {
+    return this.map(f).join()
+  }
 })
 
-IO.of = value => IO(value)
+IO.of = value => IO(() => value)
+
+// (* -> a) -> (* -> IO a)
+IO.as = f => (...args) => IO(() => f(...args))
 
 module.exports = IO

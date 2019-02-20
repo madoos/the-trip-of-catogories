@@ -1,4 +1,4 @@
-const { pipe, prop, toLower, concat, __, assoc, map, always } = require("ramda")
+const { pipe, prop, toLower, concat, __, assoc, map, chain } = require("ramda")
 const { promptUserNameSync } = require("./src/utils")
 const Maybe = require("./src/maybe")
 const IO = require("./src/IO")
@@ -20,10 +20,11 @@ const createEmail = pipe(
   map(formatEmail)
 )
 
-// createEmailFromIO :: () -> OI Maybe Object
+// createEmailFromIO :: String -> OI Maybe Object
 const createEmailFromIO = pipe(
-  always(IO(() => promptUserNameSync("YOUR NAME: "))),
-  map(createEmail)
+  text => IO(() => promptUserNameSync(text)),
+  map(createEmail),
+  chain(data => IO(() => console.log(data)))
 )
 
 module.exports = createEmailFromIO
