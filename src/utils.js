@@ -6,6 +6,9 @@ const promptUserNameSync = text => {
   return Boolean(value) ? { name: value } : null
 }
 
+const run = io => io.run()
+
 module.exports = {
-  promptUserNameSync
+  promptUserNameSync,
+  run
 }
